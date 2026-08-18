@@ -1,0 +1,166 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "5888d636-7d26-4bfa-8a94-eee3006da09d",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "44272d62-bd30-443e-85d4-e1e0491130e4",
+      "name": "Webhook",
+      "webhookId": "5888d636-7d26-4bfa-8a94-eee3006da09d"
+    },
+    {
+      "parameters": {
+        "url": "     https://raw.githubusercontent.com/ReeteshShukla/consultbae-assignment/refs/heads/main/data/people_export.json",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        224,
+        0
+      ],
+      "id": "675c93fc-e6d2-49cc-b376-bf148244808e",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Get the new applicant's data from the Webhook node\nconst webhookData = $('Webhook').first().json.body;\n\n// Get the raw response from HTTP Request - GitHub serves it as plain text,\n// so we need to parse it into JSON ourselves\nconst rawResponse = $input.first().json.data;\nconst knownPeople = typeof rawResponse === 'string' ? JSON.parse(rawResponse) : rawResponse;\n\n// --- Normalize helper functions (same logic as our Python pipeline) ---\nfunction normalizePhone(raw) {\n  if (!raw) return null;\n  const digits = String(raw).replace(/\\D/g, '');\n  return digits.length >= 10 ? digits.slice(-10) : null;\n}\nfunction normalizeEmail(raw) {\n  return raw ? String(raw).trim().toLowerCase() : null;\n}\n\nconst newEmail = normalizeEmail(webhookData.email);\nconst newPhone = normalizePhone(webhookData.phone);\n\n// Check if this person already exists (same matching logic as Task 1)\nconst match = knownPeople.find(person =>\n  (newEmail && person.canonical_email === newEmail) ||\n  (newPhone && person.canonical_phone === newPhone)\n);\n\nreturn [{\n  json: {\n    submitted_name: webhookData.name,\n    submitted_email: webhookData.email,\n    submitted_phone: webhookData.phone,\n    is_duplicate: !!match,\n    matched_person: match || null,\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        448,
+        0
+      ],
+      "id": "8932e31d-5af0-4d14-b1b5-6a8285897164",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "cc6dedf0-4285-4f8e-b206-91b2999cc585",
+              "leftValue": "={{ $json.is_duplicate }}",
+              "rightValue": "true",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        672,
+        0
+      ],
+      "id": "7a8dd279-8d37-4780-b07e-ac4db7a30dbd",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "sendTo": "reeteshshukla75@gmail.com",
+        "subject": "Duplicate Applicant Alert",
+        "message": "=Possible duplicate detected.  Submitted: {{ $json.submitted_name }} ({{ $json.submitted_email }}) Matches existing record: {{ $json.matched_person.canonical_name }} (Person ID: {{ $json.matched_person.person_id }})",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        896,
+        -96
+      ],
+      "id": "228ba99e-d277-4568-8553-89ba2c5b7153",
+      "name": "Send a message",
+      "webhookId": "e85ddeb7-2c55-45db-b998-039d1c4dd838",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "3vfRwUvF2Rt2bJda",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "cb680107-6fa4-4a3f-b531-fa88feae435d",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "2f2d47cb2652bb9e30f35fb21ba8b6f63e831fc3b1df6de39f7cf43950864508"
+  },
+  "nodeGroups": [],
+  "id": "BrSsuBEffTnC1CyK",
+  "tags": []
+}
