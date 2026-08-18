@@ -1,0 +1,380 @@
+[
+  {
+    "person_id": 1,
+    "canonical_name": "Tanvi Gupta",
+    "canonical_email": "tanvi.gupta31@example.com",
+    "canonical_phone": "9000000254",
+    "canonical_city": "Bengaluru"
+  },
+  {
+    "person_id": 2,
+    "canonical_name": "Manish Reddy",
+    "canonical_email": "manish.reddy73@example.com",
+    "canonical_phone": "9000000237",
+    "canonical_city": "Gurgaon"
+  },
+  {
+    "person_id": 3,
+    "canonical_name": "Priya Singh",
+    "canonical_email": "priya.singh61@mailtest.example.org",
+    "canonical_phone": "9000000287",
+    "canonical_city": "Gurgaon"
+  },
+  {
+    "person_id": 4,
+    "canonical_name": "Vikram Saxena",
+    "canonical_email": "vikram.saxena60@example.com",
+    "canonical_phone": "9000000113",
+    "canonical_city": "Gurgaon"
+  },
+  {
+    "person_id": 5,
+    "canonical_name": "Amit Agarwal",
+    "canonical_email": "amit.agarwal3@mailtest.example.org",
+    "canonical_phone": "9000000288",
+    "canonical_city": "Pune"
+  },
+  {
+    "person_id": 6,
+    "canonical_name": "Sahil Malhotra",
+    "canonical_email": "sahil.malhotra1@example.in",
+    "canonical_phone": "9000000143",
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 7,
+    "canonical_name": "Shreya Gupta",
+    "canonical_email": "shreya.gupta85@example.com",
+    "canonical_phone": "9000000227",
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 8,
+    "canonical_name": "Isha Chopra",
+    "canonical_email": "isha.chopra95@mailtest.example.org",
+    "canonical_phone": "9000000138",
+    "canonical_city": "Pune"
+  },
+  {
+    "person_id": 9,
+    "canonical_name": "Priya Nair",
+    "canonical_email": "priya.nair70@example.com",
+    "canonical_phone": "9000000222",
+    "canonical_city": "Gurgaon"
+  },
+  {
+    "person_id": 10,
+    "canonical_name": "Rohit Mishra",
+    "canonical_email": "rohit.mishra70@mailtest.example.org",
+    "canonical_phone": "9000000167",
+    "canonical_city": "Delhi"
+  },
+  {
+    "person_id": 11,
+    "canonical_name": "Rahul Malhotra",
+    "canonical_email": "rahul.malhotra69@mailtest.example.org",
+    "canonical_phone": "9000000260",
+    "canonical_city": "New Delhi"
+  },
+  {
+    "person_id": 12,
+    "canonical_name": "Rahul Jain",
+    "canonical_email": "rahul.jain34@example.in",
+    "canonical_phone": "9000000114",
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 13,
+    "canonical_name": "Nikhil Malhotra",
+    "canonical_email": "nikhil.malhotra41@example.in",
+    "canonical_phone": "9000000145",
+    "canonical_city": "New Delhi"
+  },
+  {
+    "person_id": 14,
+    "canonical_name": "Karan Bhatia",
+    "canonical_email": "karan.bhatia32@mailtest.example.org",
+    "canonical_phone": "9000000211",
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 15,
+    "canonical_name": "Ritu Sharma",
+    "canonical_email": "ritu.sharma23@mailtest.example.org",
+    "canonical_phone": "9000000146",
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 16,
+    "canonical_name": "Arjun Mishra",
+    "canonical_email": "arjun.mishra70@example.com",
+    "canonical_phone": "9000000106",
+    "canonical_city": "Delhi"
+  },
+  {
+    "person_id": 17,
+    "canonical_name": "Meera Bhatia",
+    "canonical_email": "meera.bhatia52@mailtest.example.org",
+    "canonical_phone": "9000000223",
+    "canonical_city": "Delhi Ncr"
+  },
+  {
+    "person_id": 18,
+    "canonical_name": "Varun Jain",
+    "canonical_email": "varun.jain29@example.com",
+    "canonical_phone": "9000000263",
+    "canonical_city": "Pune"
+  },
+  {
+    "person_id": 19,
+    "canonical_name": "Arjun Mehta",
+    "canonical_email": "arjun.mehta9@example.in",
+    "canonical_phone": "9000000131",
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 20,
+    "canonical_name": "Kavya Mehta",
+    "canonical_email": "kavya.mehta7@example.com",
+    "canonical_phone": "9000000177",
+    "canonical_city": "Bengaluru"
+  },
+  {
+    "person_id": 21,
+    "canonical_name": "Sneha Chopra",
+    "canonical_email": "sneha.chopra99@example.in",
+    "canonical_phone": "9000000162",
+    "canonical_city": "Pune"
+  },
+  {
+    "person_id": 22,
+    "canonical_name": "Deepak Mehta",
+    "canonical_email": "deepak.mehta86@example.in",
+    "canonical_phone": "9000000116",
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 23,
+    "canonical_name": "Pooja Gupta",
+    "canonical_email": "pooja.gupta57@mailtest.example.org",
+    "canonical_phone": "9000000271",
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 24,
+    "canonical_name": "R. Verma",
+    "canonical_email": "rohit.verma13@mailtest.example.org",
+    "canonical_phone": "9000000294",
+    "canonical_city": "Bangalore"
+  },
+  {
+    "person_id": 25,
+    "canonical_name": "Sneha Mishra",
+    "canonical_email": "sneha.mishra14@mailtest.example.org",
+    "canonical_phone": "9000000229",
+    "canonical_city": "Pune"
+  },
+  {
+    "person_id": 26,
+    "canonical_name": "Nikhil Chopra",
+    "canonical_email": "alt.nikhil.chopra70@example.com",
+    "canonical_phone": "9000000103",
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 27,
+    "canonical_name": "Priya Saxena",
+    "canonical_email": "priya.saxena61@example.com",
+    "canonical_phone": "9000000231",
+    "canonical_city": "Delhi"
+  },
+  {
+    "person_id": 28,
+    "canonical_name": "Varun Saxena",
+    "canonical_email": "varun.saxena21@example.in",
+    "canonical_phone": "9000000170",
+    "canonical_city": "Gurgaon"
+  },
+  {
+    "person_id": 29,
+    "canonical_name": "Gaurav Mehta",
+    "canonical_email": "gaurav.mehta79@mailtest.example.org",
+    "canonical_phone": "9000000133",
+    "canonical_city": "Bengaluru"
+  },
+  {
+    "person_id": 30,
+    "canonical_name": "Rohit Nair",
+    "canonical_email": "rohit.nair32@mailtest.example.org",
+    "canonical_phone": "9000000268",
+    "canonical_city": "Gurgaon"
+  },
+  {
+    "person_id": 31,
+    "canonical_name": "Deepak Nair",
+    "canonical_email": "deepak.nair44@example.com",
+    "canonical_phone": "9000000296",
+    "canonical_city": "Bangalore"
+  },
+  {
+    "person_id": 32,
+    "canonical_name": "Rahul Chopra",
+    "canonical_email": "rahul.chopra70@example.com",
+    "canonical_phone": "9000000137",
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 33,
+    "canonical_name": "Deepak Singh",
+    "canonical_email": "deepak.singh36@mailtest.example.org",
+    "canonical_phone": "9000000202",
+    "canonical_city": "Bangalore"
+  },
+  {
+    "person_id": 34,
+    "canonical_name": "Amit Reddy",
+    "canonical_email": "amit.reddy9@mailtest.example.org",
+    "canonical_phone": "9000000165",
+    "canonical_city": "Delhi Ncr"
+  },
+  {
+    "person_id": 35,
+    "canonical_name": "Tanvi Agarwal",
+    "canonical_email": "tanvi.agarwal97@example.in",
+    "canonical_phone": "9000000148",
+    "canonical_city": "Pune"
+  },
+  {
+    "person_id": 36,
+    "canonical_name": "Nikhil Mehta",
+    "canonical_email": "nikhil.mehta5@example.com",
+    "canonical_phone": "9000000104",
+    "canonical_city": "Pune"
+  },
+  {
+    "person_id": 37,
+    "canonical_name": "Isha Kapoor",
+    "canonical_email": "isha.kapoor54@example.com",
+    "canonical_phone": "9000000295",
+    "canonical_city": "New Delhi"
+  },
+  {
+    "person_id": 38,
+    "canonical_name": "Arjun Bhatia",
+    "canonical_email": "arjun.bhatia14@example.com",
+    "canonical_phone": "9000000212",
+    "canonical_city": "New Delhi"
+  },
+  {
+    "person_id": 39,
+    "canonical_name": "Isha Sharma",
+    "canonical_email": "isha.sharma15@example.com",
+    "canonical_phone": "9000000259",
+    "canonical_city": "Delhi"
+  },
+  {
+    "person_id": 40,
+    "canonical_name": "Neha Bhatia",
+    "canonical_email": "neha.bhatia60@mailtest.example.org",
+    "canonical_phone": "9000000273",
+    "canonical_city": "Pune"
+  },
+  {
+    "person_id": 41,
+    "canonical_name": "Manish Bhatia",
+    "canonical_email": "manish.bhatia3@example.com",
+    "canonical_phone": "9000000161",
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 42,
+    "canonical_name": "Divya Chopra",
+    "canonical_email": "divya.chopra59@example.in",
+    "canonical_phone": "9000000111",
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 43,
+    "canonical_name": "Karan Chopra",
+    "canonical_email": "karan.chopra76@mailtest.example.org",
+    "canonical_phone": "9000000245",
+    "canonical_city": "Pune"
+  },
+  {
+    "person_id": 44,
+    "canonical_name": "Vikram Mehta",
+    "canonical_email": "vikram.mehta6@example.com",
+    "canonical_phone": "9000000261",
+    "canonical_city": "Pune"
+  },
+  {
+    "person_id": 45,
+    "canonical_name": "Pooja Kapoor",
+    "canonical_email": "pooja.kapoor62@example.in",
+    "canonical_phone": null,
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 46,
+    "canonical_name": "Kavya Verma",
+    "canonical_email": "kavya.verma74@mailtest.example.org",
+    "canonical_phone": null,
+    "canonical_city": "Gurgaon"
+  },
+  {
+    "person_id": 47,
+    "canonical_name": "Tanvi Reddy",
+    "canonical_email": "tanvi.reddy80@example.com",
+    "canonical_phone": null,
+    "canonical_city": "Pune"
+  },
+  {
+    "person_id": 48,
+    "canonical_name": "Varun Singh",
+    "canonical_email": "varun.singh81@example.com",
+    "canonical_phone": null,
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 49,
+    "canonical_name": "Tanvi Kapoor",
+    "canonical_email": "tanvi.kapoor38@example.com",
+    "canonical_phone": null,
+    "canonical_city": "New Delhi"
+  },
+  {
+    "person_id": 50,
+    "canonical_name": "Nikhil Nair",
+    "canonical_email": "nikhil.nair26@example.in",
+    "canonical_phone": null,
+    "canonical_city": "Gurgaon"
+  },
+  {
+    "person_id": 51,
+    "canonical_name": "Pooja Reddy",
+    "canonical_email": "pooja.reddy96@mailtest.example.org",
+    "canonical_phone": null,
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 52,
+    "canonical_name": "Tanvi Sharma",
+    "canonical_email": "tanvi.sharma56@mailtest.example.org",
+    "canonical_phone": null,
+    "canonical_city": "Noida"
+  },
+  {
+    "person_id": 53,
+    "canonical_name": "Deepak Nair",
+    "canonical_email": "deepak.nair57@example.in",
+    "canonical_phone": null,
+    "canonical_city": "New Delhi"
+  },
+  {
+    "person_id": 54,
+    "canonical_name": "Anjali Agarwal",
+    "canonical_email": "anjali.agarwal53@mailtest.example.org",
+    "canonical_phone": null,
+    "canonical_city": "Bengaluru"
+  }
+]
